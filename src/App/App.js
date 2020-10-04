@@ -14,7 +14,7 @@ const url = (name, wrap = false) =>
 function App() {
   const parallax = useRef();
   return (
-    <Parallax ref={parallax} pages={4.5}>
+    <Parallax ref={parallax} pages={5}>
       {/* Elements creations with parallax */}
       <ParallaxElements ParallaxLayer={ParallaxLayer} url={url} />
       {/* sections */}
