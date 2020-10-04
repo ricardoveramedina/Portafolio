@@ -1,0 +1,50 @@
+@import '../../scss/style.scss';
+
+.job {
+  h4 {
+    //padding-bottom: 50px;
+    //line-height: 40px;
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+  h5 {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: Sofia Pro;
+    font-weight: 400;
+    margin: 0 0 25px;
+  }
+  p {
+    padding-bottom: 50px;
+    font-size: 18px;
+    //line-height: 30px;
+    //font-weight: 600;
+    font-family: Myriad Pro Semibold;
+    //font-family: Sofia Pro;
+  }
+  @include respond(tablet) {
+    h5 {
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 16px;
+      padding-bottom: 40px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    h5 {
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 16px;
+      padding-bottom: 40px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

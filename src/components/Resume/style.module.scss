@@ -1,0 +1,31 @@
+@import '../scss/style.scss';
+
+.parallax {
+  display: flex;
+  //align-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+}
+.resume {
+  max-width: 900px;
+  color: #ffffff;
+  h3 {
+    padding-bottom: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+  @include respond(tablet) {
+    margin-left: 10%;
+    margin-right: 10%;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    margin-left: 10%;
+    margin-right: 10%;
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

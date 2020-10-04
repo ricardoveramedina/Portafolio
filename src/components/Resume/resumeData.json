@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Developer",
+    "company": "LanCul",
+    "link": "https://www.lancul.com",
+    "date": "Feb 2020 - Jul 2020",
+    "city": "Tokyo",
+    "description": "Web developer using ReactJS and HTML5 for the back office platform. Providing maintenance to a legacy platform and website made in Cake PHP, CSS. • For Back-end, the creation of micro-services in Amazon API gateway and lambda services using Python as programming language and MYSQL as database engine."
+  },
+  {
+    "id": 2,
+    "title": "Full Stack Developer",
+    "company": " Pontificia Universidad Católica de Chile",
+    "link": "https://www.uc.cl",
+    "date": "Apr 2014 - Mar 2019",
+    "city": "Santiago",
+    "description": "Working in an interdisciplinary project to build an academic platform based on VIVO (software for managing data about researchers, scien-tists, and faculty members), using web ontologies, semantic web and micro-services technologies (http://vivo.uc.cl). System integrator using platform (Mulesoft) to generate micro-services to connect VIVO to different data sources (databases, DSpace reposi- tory, intern softwares, etc...). This software use JAVA as source lan- guage JSON and XML schemas."
+  },
+  {
+    "id": 3,
+    "title": "Delphi programmer",
+    "company": "Worldline",
+    "link": "https://www.worldline.com",
+    "date": "Dec 2011 - Mar 2014",
+    "city": "Santiago",
+    "description": "Support and developer in applications made in Delphi, forms, web ser- vices and gateway, using oracle 10g as database. The main business core of Worldline is payments and transaction services, our client was Sonda S.A. for the transport system in Santiago."
+  },
+  {
+    "id": 4,
+    "title": "Development Engineer",
+    "company": "Bazuca S.A",
+    "link": "",
+    "date": "Mar 2011 - Dec 2011",
+    "city": "Santiago",
+    "description": "Developer of the Ebook platform using C# and ONIX format for ebooks as technology and web developer using HTML, Javascript, PHP, MySQL and IBM netcommerce"
+  },
+  {
+    "id": 5,
+    "title": "Global publication Developer",
+    "company": "Isi Emerging Markets",
+    "link": "https://www.isimarkets.com",
+    "date": "Nov 2009 - Mar 2011",
+    "city": "Santiago",
+    "description": " Development of APIs and scripts made in PERL to take news from financial statements and modification of these using regular expressions. Lead a project of information analysis using XML source main data source to inject it into MySQL databases using PERL."
+  }
+]

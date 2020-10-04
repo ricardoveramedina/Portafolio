@@ -1,0 +1,39 @@
+@import '../scss/style.scss';
+
+.satellite {
+  pointer-events: none;
+  opacity: 0.3;
+  img {
+    width: 15%;
+    margin-left: 10%;
+  }
+}
+.earth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  img {
+    width: '60%';
+  }
+}
+
+@include respond(tablet) {
+  .earth {
+    padding-top: 400px;
+    img {
+      width: '40%';
+    }
+  }
+  // responsive code for tablet viewport i.e. 600px
+}
+
+@include respond(mobile) {
+  .earth {
+    padding-top: 400px;
+    img {
+      width: '40%';
+    }
+  }
+  // responsive code for mobile viewport i.e. 480px
+}

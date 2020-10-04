@@ -1,0 +1,105 @@
+@mixin toolBase {
+  display: flex;
+  flex-direction: column;
+  /* padding: 25px 30px; */
+  padding: 20px 20px;
+  line-height: 1;
+  border-radius: 20px;
+  letter-spacing: 0;
+  text-align: center;
+}
+.tool {
+  label {
+    padding-top: 10px;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+  img {
+    padding: 0 10px 0px;
+    width: 50px;
+    /* width: 100%; */
+    /* padding: 0 35px 20px; */
+  }
+}
+.reactjs {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.git {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
+.css3 {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
+.html5 {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
+.javascript {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
+.wordpress {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
+.java {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.php {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.python {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.nodejs {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.mysql {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.aws {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.linux {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.docker {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+.slack {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
