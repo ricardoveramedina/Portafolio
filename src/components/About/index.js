@@ -3,7 +3,7 @@ import { useTransition, animated } from 'react-spring';
 import styles from './style.module.scss';
 
 export default function About(props) {
-  const { ParallaxLayer, parallax, url } = props;
+  const { ParallaxLayer } = props;
 
   const [isDisplay, setIsDisplay] = useState(true);
   const transitions = useTransition(isDisplay, null, {
@@ -33,7 +33,7 @@ export default function About(props) {
                   I'm a chilean living in Tokyo who loves to develop new things
                   for awesome people.
                 </p>
-                <button className="resumeBtn">CV my resume</button>
+                {/* <button className="resumeBtn">CV my resume</button> */}
                 <p>
                   You can send me an via email or also you can check my profile
                   in Linkedin.
