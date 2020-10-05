@@ -11,8 +11,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// TODO: add link to LinkedIn
-// TODO: add link to email
 // TODO: add link to jobs
 // TODO: add projects
 // TODO: add footer "number", "email", "location"

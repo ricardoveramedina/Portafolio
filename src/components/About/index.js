@@ -35,8 +35,17 @@ export default function About(props) {
                 </p>
                 {/* <button className="resumeBtn">CV my resume</button> */}
                 <p>
-                  You can send me an via email or also you can check my profile
-                  in Linkedin.
+                  You can send me an{' '}
+                  <a href="mailto:ricardoveramedina@gmail.com">email</a> or also
+                  you can check my profile in{' '}
+                  <a
+                    href="https://www.linkedin.com/in/ricardo-vera-medina/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Linkedin
+                  </a>
+                  .
                 </p>
               </animated.div>
             )
