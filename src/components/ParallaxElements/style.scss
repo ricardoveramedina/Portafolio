@@ -20,7 +20,7 @@
 
 @include respond(tablet) {
   .earth {
-    padding-top: 400px;
+    padding-top: 600px;
     img {
       width: '40%';
     }
@@ -30,7 +30,7 @@
 
 @include respond(mobile) {
   .earth {
-    padding-top: 400px;
+    padding-top: 600px;
     img {
       width: '40%';
     }

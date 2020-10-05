@@ -11,7 +11,13 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// TODO: order App.js create components for parallax
+// TODO: add link to LinkedIn
+// TODO: add link to email
+// TODO: add link to jobs
+// TODO: add projects
+// TODO: add footer "number", "email", "location"
+// TODO: add hamburguer menu
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
