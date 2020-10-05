@@ -1,4 +1,8 @@
-Portafolio created in ReactJS
+My Portafolio:
+
+- ReactJS
+- SASS
+- react-spring
 
 https://ricardoveramedina.github.io/Portafolio/
 
