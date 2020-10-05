@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Resume from '../components/Resume';
-import ParallaxElements from '../components/ParallaxElements';
+import { config } from 'react-spring';
+import Intro from '../Intro';
+import About from '../About';
+import Skills from '../Skills';
+import Resume from '../Resume';
+import ParallaxElements from '../ParallaxElements';
 
 const url = (name, wrap = false) =>
   `${
@@ -14,11 +16,11 @@ const url = (name, wrap = false) =>
 function App() {
   const parallax = useRef();
   return (
-    <Parallax ref={parallax} pages={5.5}>
+    <Parallax ref={parallax} pages={5} config={config.molasses}>
       {/* Elements creations with parallax */}
       <ParallaxElements ParallaxLayer={ParallaxLayer} url={url} />
       {/* sections */}
-
+      <Intro ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
       <About ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
       <Skills ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
       <Resume ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />

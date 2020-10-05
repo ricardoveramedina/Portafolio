@@ -57,9 +57,9 @@ export default function Resume(props) {
 
   return (
     <ParallaxLayer
-      offset={2.5}
+      offset={3}
       speed={0}
-      factor={2}
+      factor={1}
       className={styles.parallax}
       //onClick={() => parallax.current.scrollTo(0)}
     >
@@ -67,16 +67,9 @@ export default function Resume(props) {
         <InView
           tag="div"
           onChange={(inView, entry) => {
-            /* inView && !isDisplayResume
+            inView && !isDisplayResume
               ? setIsDisplayResume(true)
-              : setIsDisplayResume(false); */
-            if (inView && !isDisplayResume) {
-              setIsDisplayResume(true);
-              console.log('inView', inView);
-            } else {
-              setIsDisplayResume(false);
-              console.log('inView', inView);
-            }
+              : setIsDisplayResume(false);
           }}
         >
           <Title isDisplayResume={isDisplayResume} title={'Work Experience'} />

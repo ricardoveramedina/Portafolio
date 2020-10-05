@@ -17,7 +17,7 @@ export default function ParallaxElements(props) {
         style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }}
       />
 
-      <ParallaxLayer offset={1.1} speed={-0.3} className="satellite">
+      <ParallaxLayer offset={2.1} speed={-0.3} className="satellite">
         <img alt="satellite4" src={url('satellite4')} />
       </ParallaxLayer>
 

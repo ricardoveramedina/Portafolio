@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Front-End",
+    "content": "This is handy if you don't want to load SVG as a separate file. Don't forget the curly braces in the import! The ReactComponent import name is significant and tells Create React App that you want a React component that renders an SVG, rather than its filename."
+  },
+  {
+    "title": "Back-End",
+    "content": "This is handy if you don't want to load SVG as a separate file. Don't forget the curly braces in the import! The ReactComponent import name is significant and tells Create React App that you want a React component that renders an SVG, rather than its filename."
+  }
+]
