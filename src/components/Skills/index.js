@@ -53,17 +53,19 @@ export default function Skills(props) {
           inView && !isDisplay ? setIsDisplay(true) : setIsDisplay(false);
         }}
       >
+        {/*   <Title isDisplay={isDisplay} text="Skill List" /> */}
+
         <Transition
           items={isDisplay}
-          trail={isDisplay && 80}
-          config={{ duration: 1000 }}
+          trail={isDisplay && 50}
+          config={{ duration: 500 }}
           from={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
           enter={{ transform: 'translate3d(0,300px,0)', opacity: 1 }}
-          leave={{ transform: 'translate3d(0,-100px,0)', opacity: 0 }}
+          leave={{ opacity: 0 }}
         >
           {(isDisplay) =>
             isDisplay
-              ? (props) => <h3 style={{ ...props }}>Skill List:</h3>
+              ? (props) => <h3 style={{ ...props }}>Skill list:</h3>
               : (props) => ''
           }
         </Transition>
