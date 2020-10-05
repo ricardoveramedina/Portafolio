@@ -1,4 +1,4 @@
-My Portafolio:
+My Portafolio created in React and based in react-spring
 
 - ReactJS
 - SASS

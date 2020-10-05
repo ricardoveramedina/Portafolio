@@ -19,12 +19,14 @@ export default function Skills(props) {
           'Javascript',
           'HTML5',
           'CSS3',
+          'Sass',
           'Python',
           'Java',
           'PHP',
           'Wordpress',
           'MySQL',
           'Linux',
+          'AWS',
           'Docker',
           'Git',
           'Slack',
@@ -53,8 +55,6 @@ export default function Skills(props) {
           inView && !isDisplay ? setIsDisplay(true) : setIsDisplay(false);
         }}
       >
-        {/*   <Title isDisplay={isDisplay} text="Skill List" /> */}
-
         <Transition
           items={isDisplay}
           trail={isDisplay && 50}
