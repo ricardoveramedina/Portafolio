@@ -28,7 +28,7 @@ export default function About(props) {
                 style={{ ...props, display: 'inline-block' }}
               >
                 <h5>Hey there, I'm Ricardo vera,</h5>
-                <h3>Full-Stack developer.</h3>
+                <h3>Full-Stack Developer</h3>
                 <p>
                   I'm a chilean living in Tokyo who loves to develop new things
                   for awesome people.

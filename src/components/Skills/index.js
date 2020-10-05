@@ -36,14 +36,14 @@ export default function Skills(props) {
     config: { duration: 1000 },
     trail: isDisplay && 80,
     from: { transform: 'translate3d(0,-400px,0)', opacity: 0 },
-    enter: { transform: 'translate3d(0,200px,0)', opacity: 1 },
+    enter: { transform: 'translate3d(0,300px,0)', opacity: 1 },
     leave: { transform: 'translate3d(0,-100px,0)', opacity: 0 },
   });
 
   return (
     <ParallaxLayer
       offset={1}
-      speed={0.3}
+      speed={1.3}
       //onClick={() => parallax.current.scrollTo(2)}
       className="skills"
     >
@@ -58,7 +58,7 @@ export default function Skills(props) {
           trail={isDisplay && 80}
           config={{ duration: 1000 }}
           from={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
-          enter={{ transform: 'translate3d(0,200px,0)', opacity: 1 }}
+          enter={{ transform: 'translate3d(0,300px,0)', opacity: 1 }}
           leave={{ transform: 'translate3d(0,-100px,0)', opacity: 0 }}
         >
           {(isDisplay) =>
