@@ -6,7 +6,7 @@
     "link": "https://www.lancul.com",
     "date": "Feb 2020 - Jul 2020",
     "city": "Tokyo",
-    "description": "Web developer using ReactJS and HTML5 for the back office platform. Providing maintenance to a legacy platform and website made in Cake PHP, CSS. • For Back-end, the creation of micro-services in Amazon API gateway and lambda services using Python as programming language and MYSQL as database engine."
+    "description": "Web developer using ReactJS and HTML5 for the back office platform. Providing maintenance to a legacy platform and website made in Cake PHP, CSS. For Back-end, the creation of micro-services in Amazon API gateway and lambda services using Python as programming language and MYSQL as database engine."
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "link": "https://www.uc.cl",
     "date": "Apr 2014 - Mar 2019",
     "city": "Santiago",
-    "description": "Working in an interdisciplinary project to build an academic platform based on VIVO (software for managing data about researchers, scien-tists, and faculty members), using web ontologies, semantic web and micro-services technologies (http://vivo.uc.cl). System integrator using platform (Mulesoft) to generate micro-services to connect VIVO to different data sources (databases, DSpace reposi- tory, intern softwares, etc...). This software use JAVA as source lan- guage JSON and XML schemas."
+    "description": "Working in an interdisciplinary project to build an academic platform based on VIVO (software for managing data about researchers, scientists, and faculty members), using web ontologies, semantic web and micro-services technologies (http://vivo.uc.cl). System integrator using platform (Mulesoft) to generate micro-services to connect VIVO to different data sources (databases, DSpace repository, intern softwares, etc...). This software use JAVA as source language JSON and XML schemas."
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "link": "https://www.worldline.com",
     "date": "Dec 2011 - Mar 2014",
     "city": "Santiago",
-    "description": "Support and developer in applications made in Delphi, forms, web ser- vices and gateway, using oracle 10g as database. The main business core of Worldline is payments and transaction services, our client was Sonda S.A. for the transport system in Santiago."
+    "description": "Support and developer in applications made in Delphi, forms, web-services and gateway, using oracle 10g as database. The main business core of Worldline is payments and transaction services, our client was Sonda S.A. for the transport system in Santiago."
   },
   {
     "id": 4,
