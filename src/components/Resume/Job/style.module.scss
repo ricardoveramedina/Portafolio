@@ -26,6 +26,11 @@
     font-family: Myriad Pro Semibold;
     //font-family: Sofia Pro;
   }
+  a {
+    color: #ffffff;
+    cursor: pointer;
+    //text-decoration: none;
+  }
   @include respond(tablet) {
     h5 {
       margin: 0 0 20px;

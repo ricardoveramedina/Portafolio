@@ -1,10 +1,10 @@
 [
   {
     "title": "Front-End",
-    "content": "This is handy if you don't want to load SVG as a separate file. Don't forget the curly braces in the import! The ReactComponent import name is significant and tells Create React App that you want a React component that renders an SVG, rather than its filename."
+    "content": "I can implementing visual elements that users needs to see and interact within your web application for mobile and desktop. Using the top of the line technologies and best practices to create components that enhance your user's website experience."
   },
   {
     "title": "Back-End",
-    "content": "This is handy if you don't want to load SVG as a separate file. Don't forget the curly braces in the import! The ReactComponent import name is significant and tells Create React App that you want a React component that renders an SVG, rather than its filename."
+    "content": "I can create server-side application logic and integration for your applications and formulate processes to solve problems, focused on efficiency and process improvement, including stability, speed, security and reusable code for your libraries."
   }
 ]

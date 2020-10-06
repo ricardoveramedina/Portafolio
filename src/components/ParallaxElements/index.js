@@ -24,7 +24,7 @@ export default function ParallaxElements(props) {
       {/* Random Clouds  */}
       <Clouds ParallaxLayer={ParallaxLayer} url={url} />
 
-      <ParallaxLayer offset={3.6} speed={-0.4} className="earth">
+      <ParallaxLayer offset={4.5} speed={-0.4} className="earth">
         <img src={url('earth')} alt="earth" />
       </ParallaxLayer>
       {/* 

@@ -65,6 +65,20 @@
     padding: 16px 0 0 30px;
     margin: 0 0 30px;
   }
+
+  @include respond(tablet) {
+    li {
+      margin: 0 0 0;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    li {
+      margin: 0 0 0;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
 }
 
 .box {
@@ -96,9 +110,11 @@
     display: block;
     margin: 0;
     font-size: 20px;
+    line-height: 1.5;
   }
   @include respond(tablet) {
     max-width: 250px;
+    max-height: 250px;
     h3 {
       font-size: 25px;
       padding-right: 50px;
