@@ -2,30 +2,58 @@
 
 .parallax {
   display: flex;
-  //align-items: center;
-  align-content: space-evenly;
+  align-items: center;
   justify-content: center;
+  @include respond(tablet) {
+    margin-top: 100px;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    margin-top: 100px;
+    // responsive code for mobile viewport i.e. 480px
+  }
 }
 .resume {
   max-width: 900px;
   color: #ffffff;
+  @include respond(tablet) {
+    margin-left: 5%;
+    margin-right: 5%;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    margin-left: 5%;
+    margin-right: 5%;
+    // responsive code for mobile viewport i.e. 480px
+  }
   h3 {
+    margin: 0;
     padding-bottom: 50px;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 40px;
     font-weight: 600;
     font-family: Sofia Pro;
     letter-spacing: 0.8px;
   }
   @include respond(tablet) {
-    margin-left: 10%;
-    margin-right: 10%;
+    //margin-left: 10%;
+    //margin-right: 10%;
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
     // responsive code for tablet viewport i.e. 600px
   }
 
   @include respond(mobile) {
-    margin-left: 10%;
-    margin-right: 10%;
+    //margin-left: 10%;
+    //margin-right: 10%;
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
     // responsive code for mobile viewport i.e. 480px
   }
 }

@@ -91,7 +91,7 @@ export default function About(props) {
       <InView
         tag="div"
         onChange={(inView, entry) => {
-          inView && !isDisplay ? setIsDisplay(true) : setIsDisplay(false);
+          inView && !isDisplay && setIsDisplay(true);
         }}
       >
         <section className={styles.about}>

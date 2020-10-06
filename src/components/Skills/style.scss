@@ -19,6 +19,8 @@
 
   .list {
     max-width: 900px;
+    min-height: 500px;
+    //margin-bottom: 300px;
   }
   ul {
     margin: 0;
@@ -32,6 +34,10 @@
   }
   @include respond(tablet) {
     margin-left: 5%;
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
     li {
       margin: 0 6px 20px;
     }
@@ -41,6 +47,10 @@
 
   @include respond(mobile) {
     margin-left: 5%;
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
     li {
       margin: 0 6px 20px;
     }

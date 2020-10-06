@@ -44,7 +44,7 @@ export default function Skills(props) {
               trail={isDisplay && 50}
               from={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
               enter={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
-              leave={{ transform: 'translate3d(0,-100px,0)', opacity: 0 }}
+              leave={{ opacity: 0 }}
             >
               {(item) => (props) => (
                 <div style={{ ...props, display: 'inline-block' }}>
@@ -63,14 +63,14 @@ export default function Skills(props) {
   return (
     <ParallaxLayer
       offset={2}
-      speed={1.3}
+      speed={0.6}
       //onClick={() => parallax.current.scrollTo(2)}
       className="skills"
     >
       <InView
         tag="div"
         onChange={(inView, entry) => {
-          inView && !isDisplay ? setIsDisplay(true) : setIsDisplay(false);
+          inView && !isDisplay && setIsDisplay(true);
         }}
       >
         <Title text="Skill list" />

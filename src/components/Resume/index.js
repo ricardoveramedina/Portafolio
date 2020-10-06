@@ -7,12 +7,12 @@ import data from './resumeData.json';
 
 export default function Resume(props) {
   const { ParallaxLayer } = props;
-  const [isDisplayResume, setIsDisplayResume] = useState(false);
+  const [isDisplay, setIsDisplay] = useState(true);
   const [jobsData, setJobsData] = useState();
 
   useEffect(() => {
-    isDisplayResume ? setJobsData(data) : setJobsData();
-  }, [isDisplayResume]);
+    isDisplay ? setJobsData(data) : setJobsData();
+  }, [isDisplay]);
 
   function Title(props) {
     const { isDisplayResume, title } = props;
@@ -20,7 +20,7 @@ export default function Resume(props) {
       <Transition
         items={isDisplayResume}
         trail={isDisplayResume && 50}
-        config={{ duration: 500 }}
+        //config={{ duration: 500 }}
         from={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
         enter={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
         leave={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
@@ -40,7 +40,7 @@ export default function Resume(props) {
       <Transition
         items={jobsData}
         trail={isDisplay && 50}
-        config={{ duration: 1000 }}
+        //config={{ duration: 500 }}
         keys={(item) => item.id}
         from={{ transform: 'translate3d(0,-400px,0)', opacity: 0 }}
         enter={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
@@ -58,8 +58,8 @@ export default function Resume(props) {
   return (
     <ParallaxLayer
       offset={3}
-      speed={0}
-      factor={1}
+      speed={0.3}
+      factor={1.1}
       className={styles.parallax}
       //onClick={() => parallax.current.scrollTo(0)}
     >
@@ -67,15 +67,11 @@ export default function Resume(props) {
         <InView
           tag="div"
           onChange={(inView, entry) => {
-            inView && !isDisplayResume
-              ? setIsDisplayResume(true)
-              : setIsDisplayResume(false);
+            inView && !isDisplay && setIsDisplay(true);
           }}
         >
-          <Title isDisplayResume={isDisplayResume} title={'Work Experience'} />
-          {isDisplayResume && jobsData && (
-            <JobView isDisplay={isDisplayResume} />
-          )}
+          <Title isDisplayResume={isDisplay} title={'Work Experience'} />
+          {isDisplay && jobsData && <JobView isDisplay={isDisplay} />}
         </InView>
       </section>
       {/*  <img
