@@ -4,6 +4,12 @@ My Portafolio created in React and based in react-spring
 - SASS
 - react-spring
 
+- TODO: fix wordpress in mobile in skills
+- TODO: add projects
+- TODO: add footer "number", "email", "location"
+- TODO: add hamburguer menu
+- TODO: add Jest to skills
+
 https://ricardoveramedina.github.io/Portafolio/
 
 ## Available Scripts
