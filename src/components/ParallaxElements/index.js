@@ -4,7 +4,7 @@ import Clouds from '../Clouds';
 import './style.scss';
 
 export default function ParallaxElements(props) {
-  const { ParallaxLayer, url } = props;
+  const { ParallaxLayer, urlAsset } = props;
 
   return (
     <Fragment>
@@ -14,31 +14,22 @@ export default function ParallaxElements(props) {
         offset={0}
         speed={0}
         factor={3}
-        style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }}
+        style={{
+          backgroundImage: `url(${urlAsset('stars')})`,
+          backgroundSize: 'cover',
+        }}
       />
 
       <ParallaxLayer offset={2.1} speed={-0.3} className="satellite">
-        <img alt="satellite4" src={url('satellite4')} />
+        <img alt="satellite4" src={urlAsset('satellite4')} />
       </ParallaxLayer>
 
       {/* Random Clouds  */}
-      <Clouds ParallaxLayer={ParallaxLayer} url={url} />
+      <Clouds ParallaxLayer={ParallaxLayer} urlAsset={urlAsset} />
 
       <ParallaxLayer offset={4.5} speed={-0.4} className="earth">
-        <img src={url('earth')} alt="earth" />
+        <img src={urlAsset('earth')} alt="earth" />
       </ParallaxLayer>
-      {/* 
-      <ParallaxLayer
-        offset={2.3}
-        speed={-0.3}
-        style={{
-          backgroundSize: '30%',
-          marginLeft: '55%',
-          opacity: '0.4',
-          backgroundImage: url('clients-main', true),
-          //backgroundImage: url('clients', true),
-        }}
-      /> */}
     </Fragment>
   );
 }

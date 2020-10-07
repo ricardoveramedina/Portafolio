@@ -7,23 +7,22 @@ import Skills from '../Skills';
 import Resume from '../Resume';
 import ParallaxElements from '../ParallaxElements';
 
-const url = (name, wrap = false) =>
-  `${
-    wrap ? 'url(' : ''
-  }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
-    wrap ? ')' : ''
-  }`;
+const urlAsset = (name) => `${process.env.PUBLIC_URL}/img/svg/${name}.svg`;
 function App() {
   const parallax = useRef();
   return (
     <Parallax ref={parallax} pages={4.6} config={config.molasses}>
       {/* Elements creations with parallax */}
-      <ParallaxElements ParallaxLayer={ParallaxLayer} url={url} />
+      <ParallaxElements ParallaxLayer={ParallaxLayer} urlAsset={urlAsset} />
       {/* sections */}
-      <Intro ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
-      <About ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
-      <Skills ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
-      <Resume ParallaxLayer={ParallaxLayer} url={url} parallax={parallax} />
+      <Intro ParallaxLayer={ParallaxLayer} parallax={parallax} />
+      <About ParallaxLayer={ParallaxLayer} parallax={parallax} />
+      <Skills
+        ParallaxLayer={ParallaxLayer}
+        urlAsset={urlAsset}
+        parallax={parallax}
+      />
+      <Resume ParallaxLayer={ParallaxLayer} parallax={parallax} />
     </Parallax>
   );
 }

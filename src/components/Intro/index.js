@@ -50,33 +50,17 @@ export default function Intro(props) {
             rel="noopener noreferrer"
           >
             Linkedin
-          </a>
-          .
+          </a>{' '}
+          or visit my{' '}
+          <a
+            href="https://github.com/ricardoveramedina"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>{' '}
+          account and check my projects .
         </p>
-        {/* <p>
-          Lorem ipsum dolor sit amet,. Donec laoreet tincidunt sollicitudin eu.
-          Proin sagittis turpis semper purus. Phasellus ut consectetur mauris
-          justo.. Donec vel ligula eu erat. Sed dui lectus, varius eget. Nam sed
-          magna urna volutpat. Praesent eget eleifend libero massa,. Duis
-          volutpat, dolor nec scelerisque. Phasellus in nisi diam bibendum.
-          Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur
-          ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum.
-          Nam purus sapien, elementum nec. Suspendisse ullamcorper egestas
-          molestie erat. Mauris luctus ligula id nibh. Cras erat neque,
-          dignissim in. In sapien nibh, tincidunt non. Sed sed mauris nibh non.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet,. Donec laoreet tincidunt sollicitudin eu.
-          Proin sagittis turpis semper purus. Phasellus ut consectetur mauris
-          justo.. Donec vel ligula eu erat. Sed dui lectus, varius eget. Nam sed
-          magna urna volutpat. Praesent eget eleifend libero massa,. Duis
-          volutpat, dolor nec scelerisque. Phasellus in nisi diam bibendum.
-          Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur
-          ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum.
-          Nam purus sapien, elementum nec. Suspendisse ullamcorper egestas
-          molestie erat. Mauris luctus ligula id nibh. Cras erat neque,
-          dignissim in. In sapien nibh, tincidunt non. Sed sed mauris nibh non.
-        </p> */}
       </Fragment>
     );
   };
@@ -86,7 +70,6 @@ export default function Intro(props) {
       offset={0}
       factor={1}
       speed={0.1}
-      //onClick={() => parallax.current.scrollTo(1)}
       className={styles.parallax}
     >
       <TransitionSection isDisplay={isDisplay}>

@@ -6,7 +6,7 @@ import toolData from './data.json';
 import './style.scss';
 
 export default function Skills(props) {
-  const { ParallaxLayer } = props;
+  const { ParallaxLayer, urlAsset } = props;
   const [tools, setTools] = useState();
   const [isDisplay, setIsDisplay] = useState(false);
 
@@ -49,7 +49,7 @@ export default function Skills(props) {
               {(item) => (props) => (
                 <div style={{ ...props, display: 'inline-block' }}>
                   <li>
-                    <Tool toolName={item} />
+                    <Tool toolName={item} urlAsset={urlAsset} />
                   </li>
                 </div>
               )}
