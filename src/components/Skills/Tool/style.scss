@@ -60,43 +60,43 @@
 }
 .git {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(33, 191, 115, 0.1);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .css3 {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(21, 114, 182, 0.1);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .sass {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(182, 102, 150, 0.308);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .jest {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(31, 186, 17, 0.219);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .html5 {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(255, 87, 34, 0.1);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .javascript {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(247, 223, 30, 0.1);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
 .wordpress {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(90, 158, 207, 0.301);
   border: 3px solid rgba(97, 218, 251, 0.2);
   @include respond(tablet) {
     padding: 10px 9px;
@@ -110,42 +110,42 @@
 
 .java {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(129, 161, 248, 0.377);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .php {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(147, 157, 206, 0.377);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .python {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(122, 203, 253, 0.39);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .nodejs {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(128, 165, 98, 0.329);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .mysql {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(98, 129, 159, 0.411);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .aws {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(231, 153, 35, 0.24);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .linux {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(122, 203, 253, 0.185);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .docker {
   @include toolBase;
-  background: rgba(97, 218, 251, 0.1);
+  background: rgba(60, 107, 188, 0.404);
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 .slack {

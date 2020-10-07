@@ -7,6 +7,7 @@ My Portafolio created in React and based in react-spring
 - TODO: add projects
 - TODO: add footer "number", "email", "location"
 - TODO: add hamburguer menu
+- TODO: update background-color for each tool
 
 https://ricardoveramedina.github.io/Portafolio/
 
