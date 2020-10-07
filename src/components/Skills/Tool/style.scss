@@ -29,12 +29,14 @@
     padding: 0 10px 0px;
     width: 50px;
     min-height: 50px;
+    max-height: 50px;
     /* width: 100%; */
     /* padding: 0 35px 20px; */
   }
   @include respond(tablet) {
     label {
       font-size: 10px;
+      font-weight: 400;
     }
     img {
       width: 25px;
@@ -74,6 +76,12 @@
   border: 3px solid rgba(97, 218, 251, 0.2);
 }
 
+.jest {
+  @include toolBase;
+  background: rgba(97, 218, 251, 0.1);
+  border: 3px solid rgba(97, 218, 251, 0.2);
+}
+
 .html5 {
   @include toolBase;
   background: rgba(97, 218, 251, 0.1);
@@ -90,6 +98,14 @@
   @include toolBase;
   background: rgba(97, 218, 251, 0.1);
   border: 3px solid rgba(97, 218, 251, 0.2);
+  @include respond(tablet) {
+    padding: 10px 9px;
+    // responsive code for tablet viewport i.e. 600px
+  }
+  @include respond(mobile) {
+    padding: 10px 9px;
+    // responsive code for mobile viewport i.e. 480px
+  }
 }
 
 .java {
