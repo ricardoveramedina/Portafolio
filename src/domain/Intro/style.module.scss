@@ -1,0 +1,48 @@
+@import '../../scss/style.scss';
+
+.parallax {
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+}
+.intro {
+  @include containerBase;
+  //margin-left: 40px;
+  max-width: 800px;
+  //padding: 0 40px;
+  color: #ccc;
+  a {
+    color: #ffffff;
+  }
+  h3 {
+    //padding: 0;
+    font-size: 72px;
+    line-height: 80px;
+    /* color: #ae45ff; */
+    color: #b690ce;
+    letter-spacing: -0.25px;
+    font-family: Rubik;
+    font-weight: 400;
+    margin: 0 0 26px;
+  }
+  h5 {
+    //padding: 0;
+    font-size: 20px;
+    color: #ccc;
+    letter-spacing: 0;
+    font-family: Sofia Pro;
+    font-weight: 400;
+    margin: 0 0 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  @include respond(tablet) {
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

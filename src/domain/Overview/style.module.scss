@@ -1,0 +1,136 @@
+@import '../../scss/style.scss';
+
+.parallax {
+  /*  display: flex;
+  align-items: center;
+  align-content: space-evenly; */
+}
+
+.about {
+  @include containerBase;
+  max-height: 500px;
+  color: #ffffff;
+  h3 {
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+  h5 {
+    font-size: 60px;
+    letter-spacing: 0;
+    font-family: Sofia Pro;
+    font-weight: 400;
+    margin: 0 0 100px;
+  }
+
+  @include respond(tablet) {
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 0px;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0 0 0 0;
+    min-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style-type: none;
+    padding: 0px 0 0 0px;
+    margin: 0 10px 0px;
+  }
+
+  @include respond(tablet) {
+    li {
+      padding: 0px 5% 0px 0px;
+      margin: 0 0px 10px 0px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    li {
+      padding: 0px 0% 0px 0px;
+      margin: 0 0px 10px 0px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 510px;
+  border-radius: 20px;
+  border: 4px solid hsla(0, 0%, 100%, 0.05);
+  padding: 50px 44px;
+
+  h3 {
+    margin: 0;
+    padding: 0 250px 50px 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  p {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  @include respond(tablet) {
+    padding: 15px 10px 15px 10px;
+    h3 {
+      font-size: 25px;
+      padding: 0 80px 30px 0;
+    }
+    p {
+      font-size: 15px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    padding: 15px 10px 15px 10px;
+    h3 {
+      font-size: 25px;
+      padding: 0 80px 30px 0;
+    }
+    p {
+      font-size: 15px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

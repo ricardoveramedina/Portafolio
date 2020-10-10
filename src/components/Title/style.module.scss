@@ -1,0 +1,28 @@
+@import '../../scss/style.scss';
+.title {
+  color: #ffffff;
+  h3 {
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+  @include respond(tablet) {
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    h3 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

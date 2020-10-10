@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import './style.scss';
 
 export default function Clouds(props) {
-  const { ParallaxLayer, urlAsset } = props;
+  const { ParallaxLayer, assetUrl } = props;
 
   const Cloud = (props) => {
     const { paralaxName, offSet, speed, cloudNum } = props;
@@ -12,7 +12,7 @@ export default function Clouds(props) {
         {[...Array(cloudNum)].map((x, i) => (
           <img
             alt="cloudtest"
-            src={urlAsset('cloud')}
+            src={assetUrl('cloud')}
             key={paralaxName + i}
             className={'cloud' + (i + 1)}
           />

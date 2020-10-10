@@ -1,0 +1,14 @@
+[
+  {
+    "name": "LanCul",
+    "url": "",
+    "mainImage": "lancul-main",
+    "images": ["lancul1", "lancul2"]
+  },
+  {
+    "name": "UC",
+    "url": "",
+    "mainImage": "uc-main",
+    "images": ["lancul1", "lancul2"]
+  }
+]

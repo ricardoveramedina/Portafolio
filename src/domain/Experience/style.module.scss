@@ -1,0 +1,39 @@
+@import '../../scss/style.scss';
+
+.parallax {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 500px;
+  position: static;
+}
+.resume {
+  @include containerBase;
+  //max-width: 900px;
+
+  .list {
+    max-width: 1000px;
+    max-height: 1000px;
+    min-height: 500px;
+    padding: 100px 40px;
+    margin: auto;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+  @include respond(tablet) {
+    .list {
+      padding: 0px 0px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    .list {
+      padding: 0px 0px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

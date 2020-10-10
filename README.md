@@ -4,10 +4,11 @@ My Portafolio created in React and based in react-spring
 - SASS
 - react-spring
 
+- TODO: add education
 - TODO: add projects
 - TODO: add footer "number", "email", "location"
 - TODO: add hamburguer menu
-- TODO: update background-color for each tool
+- TODO: reset animation on top
 
 https://ricardoveramedina.github.io/Portafolio/
 
