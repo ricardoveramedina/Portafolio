@@ -4,8 +4,9 @@ My Portafolio created in React and based in react-spring
 - SASS
 - react-spring
 
-- TODO: add education
+- TODO: align education
 - TODO: add projects
+- TODO: In description set bold in important data avoiding xss injection
 - TODO: add footer "number", "email", "location"
 - TODO: add hamburguer menu
 - TODO: reset animation on top

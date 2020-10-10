@@ -1,0 +1,75 @@
+@import '../../../scss/style.scss';
+
+.parallax {
+  /*   display: flex;
+    align-items: center;
+    align-content: space-evenly; */
+  max-height: 500px;
+  //margin: 0px 10% 0px 10%;
+
+  @include respond(tablet) {
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    // responsive code for mobile viewport i.e. 480px
+  }
+}
+
+.description {
+  @include containerBase;
+  color: #ffffff;
+
+  @include respond(tablet) {
+    margin-right: 10%;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    margin-right: 10%;
+    // responsive code for mobile viewport i.e. 480px
+  }
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 500px;
+  padding: 0 40px;
+  margin: auto;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0 0 60px 0;
+    min-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style-type: none;
+    padding: 0px 0 0 0px;
+    margin: 0 10px 0px;
+  }
+  p {
+    font-size: 18;
+    line-height: 2;
+    overflow-wrap: break-word;
+  }
+
+  @include respond(tablet) {
+    li {
+      padding: 0px 5% 0px 0px;
+      margin: 0 0px 10px 0px;
+    }
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    li {
+      padding: 0px 0% 0px 0px;
+      margin: 0 0px 10px 0px;
+    }
+    // responsive code for mobile viewport i.e. 480px
+  }
+}

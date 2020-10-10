@@ -38,15 +38,11 @@ export default function InfoBox(props) {
 
   return (
     <div
-      className={styles.box}
+      className={isDescription ? styles.tinyBox : styles.box}
       onMouseLeave={() => setShowTitleBox((state) => !state)}
       onMouseEnter={() => setShowTitleBox((state) => !state)}
     >
-      <img
-        src={imageUrl(imageName)}
-        style={{ width: '400px', height: '400px' }}
-        alt={styles.title}
-      />
+      <img src={imageUrl(imageName)} alt={styles.title} />
 
       {!isDescription &&
         transitionBox.map(

@@ -25,11 +25,11 @@ function App() {
           <div className={styles.main}>
             <Intro ParallaxLayer={ParallaxLayer} parallax={parallax} />
             <Overview ParallaxLayer={ParallaxLayer} parallax={parallax} />
-            <Project ParallaxLayer={ParallaxLayer} parallax={parallax} />
-            {/*  <ProjectDescription
+            {/* <Project ParallaxLayer={ParallaxLayer} parallax={parallax} /> */}
+            <ProjectDescription
               ParallaxLayer={ParallaxLayer}
               parallax={parallax}
-            /> */}
+            />
             <Skills ParallaxLayer={ParallaxLayer} parallax={parallax} />
             <Experience ParallaxLayer={ParallaxLayer} parallax={parallax} />
             <Education ParallaxLayer={ParallaxLayer} parallax={parallax} />

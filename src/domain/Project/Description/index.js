@@ -7,8 +7,7 @@ import projectData from '../projectData.json';
 
 export default function Description(props) {
   const { ParallaxLayer } = props;
-  const { name, images } = projectData[0];
-
+  const { name, images, description } = projectData[0];
   const [isDisplay, setIsDisplay] = useState(false);
 
   return (
@@ -20,7 +19,7 @@ export default function Description(props) {
     >
       <InView
         tag="section"
-        className={styles.project}
+        className={styles.description}
         onChange={(inView, entry) => {
           inView && !isDisplay && setIsDisplay(true);
         }}
@@ -34,6 +33,7 @@ export default function Description(props) {
               </li>
             ))}
           </ul>
+          <p>{description}</p>
         </div>
       </InView>
     </ParallaxLayer>
