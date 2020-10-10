@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 
 //FIXME: warning cannot update a component "intro"
 export default function Intro(props) {
-  const { ParallaxLayer } = props;
+  const { ParallaxLayer, parallax } = props;
   const [isDisplay, setIsDisplay] = useState(true);
 
   const transition = useTransition(isDisplay, null, {
@@ -73,6 +73,7 @@ export default function Intro(props) {
       factor={1}
       speed={0.1}
       className={styles.parallax}
+      onClick={() => parallax.current.scrollTo(1)}
     >
       <TransitionSection />
     </ParallaxLayer>
