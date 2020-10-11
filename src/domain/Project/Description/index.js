@@ -6,36 +6,31 @@ import styles from './style.module.scss';
 import projectData from '../projectData.json';
 
 export default function Description(props) {
-  const { ParallaxLayer } = props;
   const { name, images, description } = projectData[0];
   const [isDisplay, setIsDisplay] = useState(false);
 
   return (
-    <ParallaxLayer
-      offset={2}
-      speed={0.3}
-      factor={1}
-      className={styles.parallax}
+    <InView
+      tag="div"
+      className={styles.description}
+      style={{ position: 'absolute', alignContent: 'center' }}
+      onChange={(inView, entry) => {
+        inView && !isDisplay && setIsDisplay(true);
+      }}
     >
-      <InView
-        tag="section"
-        className={styles.description}
-        onChange={(inView, entry) => {
-          inView && !isDisplay && setIsDisplay(true);
-        }}
-      >
-        <Title text={name} isDisplay={isDisplay} />
-        <div className={styles.container}>
-          <ul>
-            {images.map((data, index) => (
-              <li key={index}>
-                <InfoBox name={name} imageName={data} isDescription={true} />
-              </li>
-            ))}
-          </ul>
-          <p>{description}</p>
-        </div>
-      </InView>
-    </ParallaxLayer>
+      {/* <Title text={name} isDisplay={isDisplay} /> */}
+      <div className={styles.container}>
+        {/* <h3>{name} </h3> */}
+        <Title text={name} />
+        <ul>
+          {images.map((data, index) => (
+            <li key={index}>
+              <InfoBox name={name} imageName={data} isDescription={true} />
+            </li>
+          ))}
+        </ul>
+        <p>{description}</p>
+      </div>
+    </InView>
   );
 }

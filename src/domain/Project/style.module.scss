@@ -16,6 +16,10 @@
   }
 }
 
+.description {
+  width: 100%;
+}
+
 .project {
   @include containerBase;
   color: #ffffff;

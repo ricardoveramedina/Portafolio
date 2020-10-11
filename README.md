@@ -4,6 +4,7 @@ My Portafolio created in React and based in react-spring
 - SASS
 - react-spring
 
+- TODO: Size of gray box in mobile (project)
 - TODO: align education
 - TODO: add projects
 - TODO: In description set bold in important data avoiding xss injection

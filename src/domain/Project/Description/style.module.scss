@@ -1,23 +1,15 @@
 @import '../../../scss/style.scss';
 
-.parallax {
-  /*   display: flex;
-    align-items: center;
-    align-content: space-evenly; */
-  max-height: 500px;
-  //margin: 0px 10% 0px 10%;
-
-  @include respond(tablet) {
-    // responsive code for tablet viewport i.e. 600px
-  }
-
-  @include respond(mobile) {
-    // responsive code for mobile viewport i.e. 480px
-  }
-}
-
 .description {
-  @include containerBase;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: auto;
+  padding: 0 40px;
+  border-radius: 20px;
+
   color: #ffffff;
 
   @include respond(tablet) {
@@ -32,10 +24,14 @@
 }
 
 .container {
+  background-color: #253237;
+  @include containerBase;
+  padding: 100px 40px;
   max-width: 1200px;
-  min-height: 500px;
-  padding: 0 40px;
-  margin: auto;
+  min-height: 700px;
+  border-radius: 40px;
+  //padding: 0 40px;
+  //margin: auto;
 
   ul {
     padding: 0;

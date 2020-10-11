@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { imageUrl } from '../../../services/Paths';
-import { Link, Redirect } from 'react-router-dom';
 import styles from './style.module.scss';
 
 export default function InfoBox(props) {
-  const { name, imageName, isDescription } = props;
+  const { name, imageName, isDescription, showDescription } = props;
   const [showTitleBox, setShowTitleBox] = useState(false);
 
   const configCleanBox = {
@@ -26,41 +25,38 @@ export default function InfoBox(props) {
     leave: configCleanBox,
   });
 
-  function redirectDesc() {
-    return (
-      <Redirect
-        to={{
-          pathname: '/Project/Description',
-        }}
-      />
-    );
-  }
-
+  //FIXME: In mobile show name of the project
   return (
-    <div
-      className={isDescription ? styles.tinyBox : styles.box}
-      onMouseLeave={() => setShowTitleBox((state) => !state)}
-      onMouseEnter={() => setShowTitleBox((state) => !state)}
-    >
-      <img src={imageUrl(imageName)} alt={styles.title} />
-
-      {!isDescription &&
-        transitionBox.map(
-          ({ item, key, props }) =>
-            item && (
-              <animated.div
-                key={key}
-                style={{ ...props }}
-                className={styles.title}
-                //onClick={() => redirectDesc()}
-              >
-                <h4>
-                  {name}
-                  <Link to="/project/description">here </Link>
-                </h4>
-              </animated.div>
-            )
-        )}
-    </div>
+    <Fragment>
+      {isDescription ? (
+        <div className={styles.tinyBox}>
+          <img src={imageUrl(imageName)} alt={styles.title} />
+        </div>
+      ) : (
+        <div
+          className={styles.box}
+          onClick={() => {
+            showDescription(true);
+            setShowTitleBox(false);
+          }}
+          onMouseLeave={() => setShowTitleBox(false)}
+          onMouseEnter={() => setShowTitleBox(true)}
+        >
+          <img src={imageUrl(imageName)} alt={styles.title} />
+          {transitionBox.map(
+            ({ item, key, props }) =>
+              item && (
+                <animated.div
+                  key={key}
+                  style={{ ...props }}
+                  className={styles.title}
+                >
+                  <h4>{name}</h4>
+                </animated.div>
+              )
+          )}
+        </div>
+      )}
+    </Fragment>
   );
 }

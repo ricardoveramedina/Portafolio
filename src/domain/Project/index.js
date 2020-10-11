@@ -2,12 +2,27 @@ import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Title from '../../components/Title';
 import InfoBox from './InfoBox/index';
-import styles from './style.module.scss';
 import projectData from './projectData.json';
+import { useTransition, animated } from 'react-spring';
+import Description from './Description';
+import styles from './style.module.scss';
 
 export default function Project(props) {
   const { ParallaxLayer } = props;
   const [isDisplay, setIsDisplay] = useState(false);
+  const [isDescription, setDescription] = useState(false);
+
+  const transitionDescription = useTransition(isDescription, null, {
+    //trail: 500,
+    from: { opacity: 0, transform: 'translate3d(0, 0px,-4000px)' },
+    enter: { opacity: 1, transform: 'translate3d(0, 0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(0,0,-4000px)' },
+  });
+
+  const showDescription = (status) => {
+    setDescription(status);
+    return isDescription;
+  };
 
   return (
     <ParallaxLayer
@@ -24,17 +39,34 @@ export default function Project(props) {
         }}
       >
         <Title text="Projects" isDisplay={isDisplay} />
+        {transitionDescription.map(
+          ({ item, key, props }) =>
+            item && (
+              <animated.div
+                key={key}
+                style={{ ...props }}
+                className={styles.description}
+                onClick={() => showDescription(false)}
+              >
+                <Description />
+              </animated.div>
+            )
+        )}
         <div className={styles.container}>
           <ul>
-            {projectData.map((proj, index) => (
-              <li key={index}>
-                <InfoBox
-                  name={proj.name}
-                  imageName={proj.mainImage}
-                  isDescription={false}
-                />
-              </li>
-            ))}
+            {
+              //!isDescription &&
+              projectData.map((proj, index) => (
+                <li key={index}>
+                  <InfoBox
+                    name={proj.name}
+                    imageName={proj.mainImage}
+                    isDescription={false}
+                    showDescription={showDescription}
+                  />
+                </li>
+              ))
+            }
           </ul>
         </div>
       </InView>
