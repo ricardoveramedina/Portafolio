@@ -13,7 +13,6 @@ export default function Project(props) {
   const [isDescription, setDescription] = useState(false);
 
   const transitionDescription = useTransition(isDescription, null, {
-    //trail: 500,
     from: { opacity: 0, transform: 'translate3d(0, 0px,-4000px)' },
     enter: { opacity: 1, transform: 'translate3d(0, 0,0)' },
     leave: { opacity: 0, transform: 'translate3d(0,0,-4000px)' },
@@ -35,7 +34,7 @@ export default function Project(props) {
         tag="section"
         className={styles.project}
         onChange={(inView, entry) => {
-          inView && !isDisplay && setIsDisplay(true);
+          inView && !isDisplay ? setIsDisplay(true) : showDescription(false);
         }}
       >
         <Title text="Projects" isDisplay={isDisplay} />

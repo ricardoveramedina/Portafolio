@@ -1,24 +1,38 @@
 @import '../../../scss/style.scss';
 
 .description {
-  z-index: 2;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   position: absolute;
   margin: auto;
-  padding: 0 40px;
+  //padding: 0 40px;
   border-radius: 20px;
-
   color: #ffffff;
 
+  h3 {
+    margin: 0 0 0 10px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Sofia Pro;
+    letter-spacing: 0.8px;
+  }
+
   @include respond(tablet) {
-    margin-right: 10%;
+    h3 {
+      padding: 15px 0;
+      font-size: 30px;
+    }
     // responsive code for tablet viewport i.e. 600px
   }
 
   @include respond(mobile) {
-    margin-right: 10%;
+    h3 {
+      padding: 15px 0;
+      font-size: 30px;
+    }
     // responsive code for mobile viewport i.e. 480px
   }
 }
@@ -44,8 +58,8 @@
   }
   li {
     list-style-type: none;
-    padding: 0px 0 0 0px;
-    margin: 0 10px 0px;
+    margin: auto;
+    padding: 10px 10px;
   }
   p {
     font-size: 18;
@@ -54,17 +68,25 @@
   }
 
   @include respond(tablet) {
+    padding: 10px 10px 10px 10px;
+    ul {
+      margin: 0 0 0 0;
+    }
     li {
-      padding: 0px 5% 0px 0px;
-      margin: 0 0px 10px 0px;
+      margin: auto;
+      padding: 3px 3px;
     }
     // responsive code for tablet viewport i.e. 600px
   }
 
   @include respond(mobile) {
+    padding: 10px 10px 10px 10px;
+    ul {
+      margin: 0 0 0 0;
+    }
     li {
-      padding: 0px 0% 0px 0px;
-      margin: 0 0px 10px 0px;
+      margin: auto;
+      padding: 3px 3px;
     }
     // responsive code for mobile viewport i.e. 480px
   }

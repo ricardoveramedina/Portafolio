@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import InfoBox from '../InfoBox';
-import Title from '../../../components/Title';
 import styles from './style.module.scss';
 import projectData from '../projectData.json';
 
@@ -13,15 +12,12 @@ export default function Description(props) {
     <InView
       tag="div"
       className={styles.description}
-      style={{ position: 'absolute', alignContent: 'center' }}
       onChange={(inView, entry) => {
         inView && !isDisplay && setIsDisplay(true);
       }}
     >
-      {/* <Title text={name} isDisplay={isDisplay} /> */}
       <div className={styles.container}>
-        {/* <h3>{name} </h3> */}
-        <Title text={name} />
+        <h3>{name}</h3>
         <ul>
           {images.map((data, index) => (
             <li key={index}>

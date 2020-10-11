@@ -3,7 +3,7 @@
     "name": "LanCul",
     "url": "",
     "mainImage": "lancul-main",
-    "images": ["lancul1", "lancul2", "lancul3", "lancul4"],
+    "images": ["lancul-main", "lancul-main", "lancul-main", "lancul-main"],
     "description": "Web developer using ReactJS and HTML5 for the back office platform. Providing maintenance to a legacy platform and website made in Cake PHP, CSS. For Back-end, the creation of micro-services in Amazon API gateway and lambda services using Python as programming language and MYSQL as database engine."
   },
   {
