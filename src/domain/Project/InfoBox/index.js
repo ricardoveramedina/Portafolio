@@ -4,7 +4,14 @@ import { imageUrl } from '../../../services/Paths';
 import styles from './style.module.scss';
 
 export default function InfoBox(props) {
-  const { name, imageName, isDescription, showDescription } = props;
+  const {
+    name,
+    imageName,
+    projIndex,
+    isDescription,
+    showDescription,
+    setProjIndex,
+  } = props;
   const [showTitleBox, setShowTitleBox] = useState(false);
 
   const configCleanBox = {
@@ -36,6 +43,7 @@ export default function InfoBox(props) {
         <div
           className={styles.box}
           onClick={() => {
+            setProjIndex(projIndex);
             showDescription(true);
             setShowTitleBox(false);
           }}

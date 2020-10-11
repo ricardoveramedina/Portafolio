@@ -26,28 +26,28 @@ export default function Clouds(props) {
       <Cloud
         ParallaxLayer={ParallaxLayer}
         paralaxName={'parallaxLayer1'}
-        offSet={2}
+        offSet={3}
         speed={0.8}
         cloudNum={2}
       />
       <Cloud
         ParallaxLayer={ParallaxLayer}
         paralaxName={'parallaxLayer2'}
-        offSet={2.75}
+        offSet={3.75}
         speed={0.5}
         cloudNum={2}
       />
       <Cloud
         ParallaxLayer={ParallaxLayer}
         paralaxName={'parallaxLayer3'}
-        offSet={2}
+        offSet={3}
         speed={0.2}
         cloudNum={2}
       />
       <Cloud
         ParallaxLayer={ParallaxLayer}
         paralaxName={'parallaxLayer4'}
-        offSet={(2, 6)}
+        offSet={3.6}
         speed={-0.1}
         cloudNum={3}
       />

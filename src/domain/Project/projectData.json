@@ -3,13 +3,14 @@
     "name": "LanCul",
     "url": "",
     "mainImage": "lancul-main",
-    "images": ["lancul-main", "lancul-main", "lancul-main", "lancul-main"],
-    "description": "Web developer using ReactJS and HTML5 for the back office platform. Providing maintenance to a legacy platform and website made in Cake PHP, CSS. For Back-end, the creation of micro-services in Amazon API gateway and lambda services using Python as programming language and MYSQL as database engine."
+    "images": ["lancul-1", "lancul-2", "lancul-3", "lancul-4"],
+    "description": "Working on the creation of a web version of the iOS app, for the point system and the reservation schedule of customers. Mainly using javascript and CakePHP for his legacy platform, all connected via API gateway in AWS and using Python as programming language. Reformulate the reservation and register view of new members, offering dynamic live information of the current schedule to reserve. Working in a new back office platform using ReactJS and HTML5 for the back office platform."
   },
   {
     "name": "UC",
     "url": "",
     "mainImage": "uc-main",
-    "images": ["lancul1", "lancul2"]
+    "images": ["uc-1-m", "uc-2-m", "uc-3-m", "uc-4-m"],
+    "description": "Working in an interdisciplinary project to build an academic platform based on VIVO (software for managing data about researchers, scientists, and faculty members), using web ontologies, semantic web and micro-services technologies. System integrator using platform (Mulesoft) to generate micro-services to connect VIVO to different data sources (databases, DSpace repository, intern softwares, etc…). This software use JAVA as source language JSON and XML schemas. Administrator of a git control version using bitbucket. Developer of a unify frontend webkit for websites of the university, using LESS, Boostrap, jQuery, Javascript and React."
   }
 ]

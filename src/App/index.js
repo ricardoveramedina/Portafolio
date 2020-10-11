@@ -15,14 +15,13 @@ import styles from './style.module.scss';
 
 function App() {
   const parallax = useRef();
-  const [pages, setPages] = useState(6);
 
   return (
     //pages={4.6}
     <Switch>
       <Parallax
         ref={parallax}
-        pages={pages}
+        pages={5.9}
         config={config.molasses}
         //scrolling={false}
       >
@@ -35,7 +34,7 @@ function App() {
           <Project ParallaxLayer={ParallaxLayer} parallax={parallax} />
           <Skills ParallaxLayer={ParallaxLayer} parallax={parallax} />
           <Experience ParallaxLayer={ParallaxLayer} parallax={parallax} />
-          <Education ParallaxLayer={ParallaxLayer} parallax={parallax} />
+          {/* <Education ParallaxLayer={ParallaxLayer} parallax={parallax} /> */}
         </div>
 
         <Fragment>

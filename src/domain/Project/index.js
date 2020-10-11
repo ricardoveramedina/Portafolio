@@ -11,6 +11,7 @@ export default function Project(props) {
   const { ParallaxLayer } = props;
   const [isDisplay, setIsDisplay] = useState(false);
   const [isDescription, setDescription] = useState(false);
+  const [projIndex, setProjIndex] = useState(0);
 
   const transitionDescription = useTransition(isDescription, null, {
     from: { opacity: 0, transform: 'translate3d(0, 0px,-4000px)' },
@@ -47,7 +48,11 @@ export default function Project(props) {
                 className={styles.description}
                 onClick={() => showDescription(false)}
               >
-                <Description />
+                <Description
+                  name={projectData[projIndex].name}
+                  images={projectData[projIndex].images}
+                  description={projectData[projIndex].description}
+                />
               </animated.div>
             )
         )}
@@ -60,8 +65,10 @@ export default function Project(props) {
                   <InfoBox
                     name={proj.name}
                     imageName={proj.mainImage}
+                    projIndex={index}
                     isDescription={false}
                     showDescription={showDescription}
+                    setProjIndex={setProjIndex}
                   />
                 </li>
               ))

@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import InfoBox from '../InfoBox';
 import styles from './style.module.scss';
-import projectData from '../projectData.json';
+//import projectData from '../projectData.json';
 
 export default function Description(props) {
-  const { name, images, description } = projectData[0];
+  //const { name, images, description } = projectData[0];
+  const { name, images, description } = props;
   const [isDisplay, setIsDisplay] = useState(false);
 
   return (

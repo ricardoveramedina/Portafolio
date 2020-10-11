@@ -1,9 +1,13 @@
 My Portafolio created in React and based in react-spring
 
+https://ricardoveramedina.github.io/Portafolio/
+
 - ReactJS
 - SASS
 - react-spring
 
+- TODO: Fix Intro
+- TODO: Add animation in project box
 - TODO: Link to image, show big picture in Project
 - TODO: Size of gray box in mobile (project)
 - TODO: align education
@@ -11,8 +15,6 @@ My Portafolio created in React and based in react-spring
 - TODO: add footer "number", "email", "location"
 - TODO: add hamburguer menu
 - TODO: reset animation on top
-
-https://ricardoveramedina.github.io/Portafolio/
 
 ## Available Scripts
 

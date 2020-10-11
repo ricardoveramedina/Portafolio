@@ -76,6 +76,9 @@
       margin: auto;
       padding: 3px 3px;
     }
+    p {
+      line-height: 1.2;
+    }
     // responsive code for tablet viewport i.e. 600px
   }
 
@@ -87,6 +90,9 @@
     li {
       margin: auto;
       padding: 3px 3px;
+    }
+    p {
+      line-height: 1.2;
     }
     // responsive code for mobile viewport i.e. 480px
   }
