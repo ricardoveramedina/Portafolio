@@ -73,7 +73,6 @@ export default function Intro(props) {
       factor={1}
       speed={0.1}
       className={styles.parallax}
-      onClick={() => parallax.current.scrollTo(1)}
     >
       <TransitionSection />
     </ParallaxLayer>

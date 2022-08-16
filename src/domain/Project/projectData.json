@@ -1,5 +1,12 @@
 [
   {
+    "name": "Avatarin",
+    "url": "",
+    "mainImage": "avatarin-main",
+    "images": ["avatarin-1", "avatarin-2", "avatarin-3", "avatarin-4"],
+    "description": "In charge of the user interface of a telepresence robot using Electron and Javascript as main technology. Providing maintenance between the core software of the robot and the main process using NodeJS and electron."
+  },
+  {
     "name": "LanCul",
     "url": "",
     "mainImage": "lancul-main",
